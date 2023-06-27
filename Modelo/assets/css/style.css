@@ -1,0 +1,64 @@
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 48, 56);
+  }
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+ }  
+
+body{
+    background: var(--primary-color);
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+.conteiner{
+    background-color: #fff;
+    max-width: 640px; /*Diminuiu!!!*/
+    margin: auto; /*Centralizou!!!!*/
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 1.3em;
+    line-height: 1.5em; /*Espaço entre as linhas*/
+    border-radius: 5%; /*Aredonda os cantos*/
+}
+
+/*A partir de aqui nada funciona, form não funciona*/
+input,label,button{
+    display:inline-block; /*Faz que cada conteudo apareça em sua propria linha*/
+    width: 100%;; /*Obriga que cada elemento oculpe toda a linha*/
+    margin-bottom: 10px;
+}
+
+input {
+    font-size: 18px;
+    height: 30px;
+    padding: 0 20px;
+}
+
+/*Mudar a cor da borda do input, focus indica que algo irá acontecer quando o usuario interagir*/
+input:focus{
+    outline: 1px solid rgb(0, 213, 255);
+}
+
+button{
+    border: #fff;
+    background: var(--primary-color);
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    padding: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: var(--primary-color-darker);
+}
+
+button:active{
+    background: rgb(47, 132, 132);
+}
