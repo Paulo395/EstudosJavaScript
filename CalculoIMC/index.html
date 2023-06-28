@@ -4,22 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js" defer></script>
+    <!--Defer garante que o js sejá executado após o carregamento total da pagina-->
     <title>Calculo IMC</title>
   </head>
   <body>
 
     <div class="principal">
-      <h1>Calcule o seu IMC</h1>
-      <form action="/" id="formulario" method="post">
-        <label for="peso">Peso</label>
-        <input type="text" name="peso" />
+      <h1 class="titulo">Calcule o seu IMC</h1>
 
-        <label for="altura">Altura</label>
-        <input type="text" name="altura" />
+      <div class="labelInput">
+        <form action="/" id="form" method="POST">
+          <label for="peso">Peso</label>
+          <input type="text" name="peso" />
 
-        <button type="submit">Enviar</button>
-      </form>
+          <label for="altura">Altura</label>
+          <input type="text" name="altura" />
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div id="resultado"></div>
     </div>
 
   </body>

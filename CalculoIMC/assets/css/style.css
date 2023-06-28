@@ -1,22 +1,37 @@
 :root{
-    --cor-principal: rgb(56, 87, 121)
+    --cor-principal: rgb(68, 192, 190);
+    --cor-principal-escura: rgb(34,97,96);
+    --cor-botao: rgb(95,157,196);
+    --cor-fundo: rgb(241,241,241);
 }
 
 body{
-    background: var(--cor-principal);
+    background: var(--cor-fundo);
 }
 
-/*Pode atrapalhar os outros*/
+/* '*' Pode atrapalhar os outros*/
 
-h1{
+* {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+.titulo{
+    background: var(--cor-principal);
+    color: #ffffff;
+    padding: 10px;
+}
+
 .principal{
-    background: #ffffff;
+    background: var(--cor-principal);
     max-width: 640px;
     margin: auto;
     padding: 10px;
+    border-radius: 10px;
+}
+
+.labelInput{
+    background: #ffffff;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -24,6 +39,7 @@ label,input{
     display: block;
     width: 99%;
     margin-bottom: 10px;
+    padding-left: 15px;
 }
 
 input{
@@ -32,5 +48,13 @@ input{
 }
 
 button{
-    background: #ffffff;
+    background: var(--cor-botao);
+    font-size: larger;
+    width: 100%;
+    color: #ffffff;
+    border:none;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
